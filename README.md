@@ -4,13 +4,13 @@ Johnny 5 Team Repo
 
 ###############
 
-##Project Title: Solar Flares, Coronal Mass Ejection (CME) relationships
+# Project Title: Solar Flares, Coronal Mass Ejection (CME) relationships
 
 Team Members: Veena Vinodkumar, Erica Frisch, Jason Peterson, Andrew Eckes
 
-#Project Description: Look at Solar Flare and CME data to ...
+## Project Description: Look at Solar Flare and CME data to ...
 
-#Research Questions to Answer:
+## Research Questions to Answer:
 
     1. Do solar flares correlate to CME events?
 
@@ -20,7 +20,7 @@ Team Members: Veena Vinodkumar, Erica Frisch, Jason Peterson, Andrew Eckes
 
     4. What does the "type" category for CME stand for? Can we infer a meaning based on some other category value?
 
-#Datasets to be used: https://api.nasa.gov/
+## Datasets to be used: https://api.nasa.gov/
 
     1. Solar Flares: DONKI Solar Flare (FLR)
 
@@ -31,7 +31,7 @@ Team Members: Veena Vinodkumar, Erica Frisch, Jason Peterson, Andrew Eckes
 
     2. Coronal Mass Ejection: DONKI (CME)
         
-#Visualizations:
+## Visualizations:
 
     1. Relationship between Solar Flares & CME events
 
@@ -40,7 +40,7 @@ Team Members: Veena Vinodkumar, Erica Frisch, Jason Peterson, Andrew Eckes
     3. 
 
 
-#Rough Breakdown of Tasks:
+## Rough Breakdown of Tasks:
 
     Veena:
         Cleaning data (getting key features)
