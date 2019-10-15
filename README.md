@@ -15,7 +15,7 @@ Research Questions to Answer:
 
     2. If the sun has a cycle of 11 years, can we determine where we are in this cycle based on the trend of CME events?
 
-    3. Can we predict the count of CME events in a given month / year?
+    3. Is there a correlation between power of CME and speed of solar flares?
 
 Datasets to be used: https://api.nasa.gov/
 
@@ -25,7 +25,7 @@ Datasets to be used: https://api.nasa.gov/
     
         Demo API: https://api.nasa.gov/DONKI/FLR?startDate=2016-01-01&endDate=2016-01-30&api_key=DEMO_KEY
 
-        
+
     2. Coronal Mass Ejection: DONKI (CME)
         
 Visualizations:
