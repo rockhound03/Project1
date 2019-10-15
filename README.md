@@ -7,7 +7,7 @@ Project Title: Solar Flares, Coronal Mass Ejection (CME) relationships
 
 Team Members: Veena Vinodkumar, Erica Frisch, Jason Peterson, Andrew Eckes
 
-Project Description: Looking at Solar Flare events and Mars Weather data and seeing if there is an affect
+Project Description: Look at Solar Flare and CME data to ...
 
 Research Questions to Answer:
     1. Do solar flares correlate to CME events?
@@ -20,8 +20,17 @@ Datasets to be used: https://api.nasa.gov/
         Demo API: https://api.nasa.gov/DONKI/FLR?startDate=2016-01-01&endDate=2016-01-30&api_key=DEMO_KEY
     2. Coronal Mass Ejection: DONKI (CME)
         
+Visualizations:
+
+    1. Relationship between Solar Flares & CME events
+
+    2. Trend of CME events over the past five years
+
+    3. 
+
 
 Rough Breakdown of Tasks:
+
     Veena:
         Cleaning data (getting key features)
 
