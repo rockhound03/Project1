@@ -85,7 +85,7 @@ def flare_query_small(start_date="2019-01-01", end_date="2019-10-13", nasa_time=
     flare_json = requests.get(query_flr_url).json()
     flare_df = get_flare_dframe(flare_json, nasa_time)
     return flare_df
-# Works, still testing. **********************************************************************************
+# Works, mars portion no longer needed. ************************************************************************
 def cme_compare(cme_id, start_date="2019-01-01", end_date="2019-10-13"):
     query_cme_url =f"https://kauai.ccmc.gsfc.nasa.gov/DONKI/WS/get/CME?startDate={start_date}&endDate={end_date}"
     cme_request = requests.get(query_cme_url).json()
@@ -104,6 +104,24 @@ def cme_compare(cme_id, start_date="2019-01-01", end_date="2019-10-13"):
                 pass
     cme_link.append({"Connection" : found_impact, "Arrival Time" : arrival_time})
     return cme_link
+# pass cme json response, return data analysis group in dataframe format. ***************************************************
+def cme_analysis_df(cme_json):
+    analysis_data = []
+    for cme in cme_json:
+        try:
+            analysis_group = cme['cmeAnalyses'][0]
+            data_dict = {"activity_id" : cme['activityID'], "speed" : analysis_group['speed'], "data_level" : analysis_group['levelOfData'],
+            "lat" : analysis_group['latitude'], "long" : analysis_group['longitude'], "type" : analysis_group['type'], "half_angle" : analysis_group['halfAngle'], 
+            "is_most_accurate" : analysis_group['isMostAccurate'], "time21_5" : analysis_group['time21_5'], "note" : analysis_group['note']}
+        except:
+            data_dict = {"activity_id" : cme['activityID'], "speed" : "no data", "data_level" : "no data",
+            "lat" : "no data", "long" : "no data", "type" : "no data", "half_angle" : "no data", 
+            "is_most_accurate" : False, "time21_5" : "no data", "note" : "no data"}
+        analysis_data.append(data_dict)
+
+    analysis_dataframe = pd.DataFrame(analysis_data)
+    return analysis_dataframe
+# ************************************************************************            
 
 # Reformat date / time from nasa format to be slightly more readable.
 def convert_date_time(nasa_zulu="2017-01-21T07:26Z"):
