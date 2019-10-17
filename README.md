@@ -20,6 +20,15 @@ Team Members: Veena Vinodkumar, Erica Frisch, Jason Peterson, Andrew Eckes
 
     4. What does the "type" category for CME stand for? Can we infer a meaning based on some other category value?
 
+### Hypothesis:
+Do CMEs speed correlate to Solar Flare power?
+ NULL: If a CME is faster,
+       then a coinciding solar flare will not neccesarily be more powerful
+ ALT: If a CME is faster,
+       then a coinciding solar flare will be more powerful
+### Statistical Test:
+Independent T-Test
+
 ### Datasets to be used: https://api.nasa.gov/
 
     1. Solar Flares: DONKI Solar Flare (FLR)
