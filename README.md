@@ -20,33 +20,39 @@ Team Members: Veena Vinodkumar, Erica Frisch, Jason Peterson, Andrew Eckes
 
     4. What does the "type" category for CME stand for? Can we infer a meaning based on some other category value?
 
-### Hypothesis:
+### Hypothesis:  (Erica)
 Do CMEs speed correlate to Solar Flare power?
  NULL: If a CME is faster,
        then a coinciding solar flare will not neccesarily be more powerful
  ALT: If a CME is faster,
        then a coinciding solar flare will be more powerful
-### Statistical Test:
+### Statistical Test: (Erica)
 Independent T-Test
 
 ### Datasets to be used: https://api.nasa.gov/
+    DONKI Documnetation (for both APIs): https://ccmc.gsfc.nasa.gov/support/DONKI-webservices.php
 
     1. Solar Flares: DONKI Solar Flare (FLR)
-
-        https://data.ivanstanojevic.me/api/tle/docs
     
         Demo API: https://api.nasa.gov/DONKI/FLR?startDate=2016-01-01&endDate=2016-01-30&api_key=DEMO_KEY
 
 
     2. Coronal Mass Ejection: DONKI (CME)
+        Demo API: https://api.nasa.gov/DONKI/CME?startDate=2017-01-03&endDate=2017-01-03&api_key=DEMO_KEY
         
 ### Visualizations:
 
-    1. Relationship between Solar Flares & CME events
+    1. Relationship between Solar Flares power & CME speeds (Jason)
 
-    2. Trend of CME events over the past five years
+    2. Trend of CMEs, Solare Flares, and Sunspots over the past five years (show 11 year cycle) (Andrew & Veena)
 
-    3. 
+    3. How many of each (bar chart) (also include linked flr/cme ?) (Erica)
+
+    4. Solar Flare power over time (Jason) 
+
+    5. CME speeds over time (Erica)
+
+    6. Sunspots north vs south (Veena)
 
 
 ### Rough Breakdown of Tasks:
